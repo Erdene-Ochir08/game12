@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rock,paper,scissors</title>
+		<style>
+			body{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				background-color:brown;
+				height:90vh;
+			}
+			.game{
+				background-color:#fff;
+				width:400px;
+				padding:20px;
+			}
+			.game img{
+				width:130px;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="game">
+			<div class="count">
+				<p class="cCount">Computer:0</p>
+				<p class="pCount">Player:0</p>
+			</div>
+			<div class="choice">
+				<img src="https://zharkuj.github.io/roshambo/R%20(2).png" onclick="play('rock')">
+				<img src="https://zharkuj.github.io/roshambo/hold_636053.png" onclick="play('paper')">
+				<img src="https://zharkuj.github.io/roshambo/Scissor-Hand-Finger-Gesture-Gesture-Scissors-512.webp" onclick="play('scissors')">
+			</div>
+			<div class="result">
+				<p class="yourChoice">Player: </p>
+				<p class="computerChoice">Computer: </p>
+				<p class="winner"></p>
+				<button onclick="restart()">Restart</button>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
